@@ -31,3 +31,9 @@ switch(crateType){
 
 }
 
+if(flulLevel < 20){
+    console.log("Warning: Insufficient fuel for maneuvers!")
+}
+if(isEngineFunctional = false){
+    console.log("Engine failure! Drifting into deep space.")
+}

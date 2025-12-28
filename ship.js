@@ -21,7 +21,7 @@ switch(crateType){
         break
         
     case "Hazardous":
-        fuelLevel = flulLevel - 10
+        fuelLevel = fuelLevel - 10
         inventoryCount = inventoryCount - 2
        // console.log("well done!")
         break
@@ -34,7 +34,7 @@ switch(crateType){
 
 if(fuelLevel > 80 && isEngineFunctional){
     console.log("Successfully dodged all asteroids!")
-}else if(fuelLevel > 30 && fuelLevel > 80){
+}else if(fuelLevel > 30 && fuelLevel < 80){
     console.log("Minor damage sustained. Fuel lost.")
     fuelLevel = fuelLevel - 15
 }else{
@@ -72,7 +72,7 @@ if(isAuthorized){
 }else{
     console.log("ALARM: Intruder Alert!")
 }
-//let for suitTybe
+let suitType
  let planetGravity = 1.9
  if(planetGravity > 1.5){
      suitType =  "Heavy Armor"
@@ -80,4 +80,26 @@ if(isAuthorized){
      suitType = "Lightweight Suit"
  }
  console.log( `Equipping ${suitType} for landing.`)
+  
+
+ let energyLost = 2
+ energyLost = energyLost * 2
+ energyLost = energyLost * 2
+ if(energyLost > 10){
+    console.log("Power core meltdown imminent!")
+ }
+
+
+
+ let missionStatus
+ if(fuelLevel > 0){
+    missionStatus = "Active"
+ }else{
+    missionStatus = "Lost in Space"
+ }
+
+ console.log(`=== STATUS REPORT: ${shipName} === `)
+ console.log(` Curent fuel: ${fuelLevel}%`)
+ console.log(`Cargo Held: ${inventoryCount}units`)
+ console.log(`Mission Status: ${missionStatus}`)
  

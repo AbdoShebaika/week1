@@ -1,5 +1,5 @@
 let shipName = "Royal"
-let flulLevel = 100
+let fuelLevel = 100
 let inventoryCount = 0
 let isEngineFunctional = true
 let destinationSector = "Alpha"
@@ -11,7 +11,7 @@ switch(crateType){
         break
 
     case "Fuel":
-        flulLevel = flulLevel + 50
+        fuelLevel = fuelLevel + 50
         //console.log("hello")
         break
         
@@ -20,7 +20,7 @@ switch(crateType){
         break
         
     case "Hazardous":
-        flulLevel = flulLevel - 10
+        fuelLevel = flulLevel - 10
         inventoryCount = inventoryCount - 2
        // console.log("well done!")
         break
@@ -31,9 +31,11 @@ switch(crateType){
 
 }
 
-if(flulLevel < 20){
-    console.log("Warning: Insufficient fuel for maneuvers!")
-}
-if(isEngineFunctional = false){
-    console.log("Engine failure! Drifting into deep space.")
+if(fuelLevel > 80 && isEngineFunctional){
+    console.log("Successfully dodged all asteroids!")
+}else if(fuelLevel > 30 && fuelLevel > 80){
+    console.log("Minor damage sustained. Fuel lost.")
+    fuelLevel = fuelLevel - 15
+}else{
+    console.log("CRITICAL HIT: Ship grounded.")
 }

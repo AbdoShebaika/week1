@@ -50,13 +50,14 @@ if(crewList.length>3){
 }
 
 // 0000 as number?
-let entercode = 1234
+let entercode = 0000
 let isAuthorized = false
 switch(entercode){
     case 1234:
         isAuthorized = false
         break
     
+
     case 0000:
         console.log("Emergency override")
         isAuthorized = true

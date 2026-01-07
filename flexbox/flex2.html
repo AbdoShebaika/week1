@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-1{
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+        }
+        .header-2{
+            display: flex;
+            justify-content: center;
+            color: gray;
+        }
+
+        .cards{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gbox{
+            height: 4rem;
+            margin: 1rem;
+            border-radius: 50px;
+            background-color: green;
+            width: 30%;
+        }
+
+        .obox{
+            height: 4rem;
+            margin: 1rem;
+            border-radius: 50px;
+            background-color: orange;
+            width: 30%;
+        }
+
+        .cards p{
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+        }
+
+        .footer p{
+            display: flex;
+            justify-content: center;
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header-1">
+        <h1>Getting Started with CSS Flexbox</h1></div>
+        <div class="header-2"> 
+        <h2>The Ultimate Beginner's Handbox</h2></div>
+
+        <div class="cards">
+        <div class="gbox"><p>item1</p></div>
+        <div class="obox"><p>item2</p></div>
+        <div class="gbox"><p>item3</p></div>
+        <div  class="obox"><p>item4</p></div>
+        <div class="gbox"><p>item5</p></div>
+        <div  class="obox"><p>item6</p></div>
+        </div>
+
+        <div class="footer"><p>learn the basic of css flexbox in the ultimate's beginner guide, and discover how to creat</p>
+        <p>flexble, responsive web with ease</p></div>
+
+    </div>
+</body>
+</html>

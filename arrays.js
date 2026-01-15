@@ -67,7 +67,7 @@ console.log(user.find(user=>user.id===2))
 //question_2
 const mapper = [{name: "Bread", price: 2}, {name: "Milk", price: 3}]
 const prices = mapper.map(price=>mapper.price>=2)
-console.log(prices)
+mapper.forEach(price=>console.log(price))
 
 
 

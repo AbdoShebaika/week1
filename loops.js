@@ -37,7 +37,7 @@ vowel('osman')
 console.log("=====================================================================")
 function factorial(number){
    let y=1;
-    for( let z=1; z<=number; z++){
+    for( let z=number; z>0; z--){
         y=y*z;
        
     }
@@ -87,7 +87,6 @@ let b = 1;
 for(let f=0; f<10; f++){
     console.log(a)
     let next = a+b;
-   
     a = b;
     b = next;
     
